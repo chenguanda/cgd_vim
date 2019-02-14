@@ -50,6 +50,17 @@ let NERDTreeChDirMode=1
 let NERDTreeShowBookmarks=1  " 显示书签
 let NERDTreeWinSize=25  " 修改NERDTree侧边窗口大小
 
+"  文档查询dash
+Plug 'rizzatti/dash.vim'
+
+" markdown 预览
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+
+" 退出insert模式的时候切换到英文输入法
+Plug 'chenguanda/smartim'
+
+let g:smartim_debug=1
 call plug#end()
 
 
