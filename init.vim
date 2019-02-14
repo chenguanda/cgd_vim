@@ -60,7 +60,6 @@ Plug 'iamcco/markdown-preview.vim'
 " 退出insert模式的时候切换到英文输入法
 Plug 'chenguanda/smartim'
 
-let g:smartim_debug=1
 call plug#end()
 
 
