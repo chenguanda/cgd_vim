@@ -57,8 +57,10 @@ Plug 'rizzatti/dash.vim'
 Plug 'iamcco/mathjax-support-for-mkdp'
 Plug 'iamcco/markdown-preview.vim'
 
+" 输入法切换
 " 退出insert模式的时候切换到英文输入法
 Plug 'chenguanda/smartim'
+let g:smartim_default='com.apple.keylayout.ABC' " 配置默认输入法
 
 call plug#end()
 
