@@ -54,8 +54,9 @@ let NERDTreeWinSize=25  " 修改NERDTree侧边窗口大小
 Plug 'rizzatti/dash.vim'
 
 " markdown 预览
+" 需要安装依赖
 Plug 'iamcco/mathjax-support-for-mkdp'
-Plug 'iamcco/markdown-preview.vim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'}
 
 " 输入法切换
 " 退出insert模式的时候切换到英文输入法
