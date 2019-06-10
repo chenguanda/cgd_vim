@@ -36,6 +36,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 let g:LanguageClient_serverCommands = {
 	\ 'python' :["pyls"],
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
+    \ 'dart': ['$DART_SDK/dart', "$DART_SDK/snapshots/analysis_server.dart.snapshot", "--lsp"],
 \ }
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
@@ -62,6 +63,10 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'}
 " 退出insert模式的时候切换到英文输入法
 Plug 'chenguanda/smartim'
 let g:smartim_default='com.apple.keylayout.ABC' " 配置默认输入法
+
+" dart 支持
+" 需要在环境变量中配置 Dart sdk的路径 $DART_SDK 
+Plug 'dart-lang/dart-vim-plugin'
 
 call plug#end()
 
